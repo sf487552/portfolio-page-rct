@@ -12,7 +12,13 @@ import Resume from "../src/components/Resume.js";
 function App() {
   return (
     <div className="App">
-
+      <Header></Header>
+      <Navbar></Navbar>
+      <About></About>
+      <Contact></Contact>
+      <Projects></Projects>
+      <Resume></Resume>
+      <Footer></Footer>
     </div>
   );
 }
