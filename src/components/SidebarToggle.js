@@ -1,12 +1,12 @@
 import React from 'react';
 import './style.css';
 
-const sidebarToggleBtn = props => (
-    <button className="toggleBtn">
+const sidebarToggle= props => (
+    <button className="toggleBtn" onClick={props.click}>
         <div className="toggle-btn-line"/>
         <div className="toggle-btn-line"/>
         <div className="toggle-btn-line"/>
     </button>
 );
 
-export default sidebarToggleBtn;
+export default sidebarToggle;
