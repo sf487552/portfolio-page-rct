@@ -1,16 +1,14 @@
 import React, { Component } from "react";
 import './App.css';
-import Home from "../src/components/Home.js";
 import About from "../src/components/About.js";
 import Contact from "../src/components/Contact.js";
 import Footer from "../src/components/Footer.js";
-import Header from "../src/components/Header.js";
 import Navbar from "../src/components/Navbar.js";
 import Projects from "../src/components/Projects.js";
 import Resume from "../src/components/Resume.js";
-// import SidebarToggle from "../src/components/SidebarToggle";
 import Backdrop from "../src/components/Backdrop";
 import Sidebar from "./components/Sidebar";
+
 
 class App extends Component {
   state = {
@@ -42,8 +40,6 @@ class App extends Component {
             <p></p>
           </main>
 
-          <Header></Header>
-          <Home></Home>
           <About></About>
           <Contact></Contact>
           <Projects></Projects>
