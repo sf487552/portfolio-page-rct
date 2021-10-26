@@ -1,6 +1,6 @@
 import React from 'react';
-
-import './style.css';
+import '../navbar/navbar.css'
+import '../style.css';
 
 const backdrop = props => (
     <div className="backdrop" onClick={props.click} />

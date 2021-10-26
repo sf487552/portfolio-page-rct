@@ -1,13 +1,18 @@
 import React, { Component } from "react";
 import './App.css';
-import About from "../src/components/About.js";
-import Contact from "../src/components/Contact.js";
-import Footer from "../src/components/Footer.js";
-import Navbar from "../src/components/Navbar.js";
-import Projects from "../src/components/Projects.js";
-import Resume from "../src/components/Resume.js";
-import Backdrop from "../src/components/Backdrop";
-import Sidebar from "./components/Sidebar";
+import About from "./components/about/About.js";
+import Contact from "./components/contact/Contact.js";
+import Footer from "./components/footer/Footer.js";
+import Navbar from "../src/components/navbar/Navbar.js";
+import Projects from "./components/projects/Projects.js";
+import Resume from "./components/resume/Resume.js";
+import Backdrop from "../src/components/navbar/Backdrop";
+import Sidebar from "./components/navbar/Sidebar";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
 
 
 class App extends Component {
@@ -32,20 +37,36 @@ class App extends Component {
       backdrop = <Backdrop click={this.backdropClickHandler} />
     }
     return (
-        <div style={{ height: '100%' }}>
-          <Navbar sidebarClickHandler={this.sidebarToggleClickHandler}/>
-          <Sidebar show={this.state.sidebarOpen}/>
-          {backdrop}
-          <main style={{ marginTop:'65px'}}>
-            <p></p>
-          </main>
-
-          <About></About>
-          <Contact></Contact>
-          <Projects></Projects>
-          <Resume></Resume>
-          <Footer></Footer>
-        </div>
+      <div style={{ height: '100%' }}>
+        <Router>
+        <Navbar sidebarClickHandler={this.sidebarToggleClickHandler}/>
+        <Sidebar show={this.state.sidebarOpen}/>
+        {backdrop}
+        <main style={{ marginTop:'65px'}}>
+      <div>
+              <Switch>
+                <Route exact path="/">
+                  <About />
+                </Route>
+                <Route path="/about">
+                  <About />
+                </Route>
+                <Route path="/contact">
+                  <Contact />
+                </Route>
+                <Route path="/projects">
+                  <Projects />
+                </Route>
+                <Route path="/resume">
+                  <Resume />
+                </Route>
+              </Switch>
+            </div>
+    
+        </main>
+        <Footer></Footer>
+        </Router>
+      </div>
     );
   }
 }

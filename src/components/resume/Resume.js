@@ -1,9 +1,10 @@
 import React from 'react';
+import '../style.css';
 
-function Contact() {
+function Resume() {
 	return (
         <div></div>
     );
 }
 
-export default Contact;
+export default Resume;

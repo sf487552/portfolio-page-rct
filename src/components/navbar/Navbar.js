@@ -1,7 +1,10 @@
 import React from 'react';
-
-import SidebarToggle from '../components/SidebarToggle';
-import './style.css';
+import SidebarToggle from '../navbar/SidebarToggle';
+import '../style.css';
+import '../navbar/navbar.css';
+import {
+    Link
+  } from "react-router-dom";
 
 function navbar(props) {
     return (
@@ -14,10 +17,10 @@ function navbar(props) {
                 <div className="space"></div>
                 <div className="nav_items">
                     <ul>
-                        <li><a href="/">About</a></li>
-                        <li><a href="/">Projects</a></li>
-                        <li><a href="/">Resume</a></li>
-                        <li><a href="/">Contact</a></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
+                        <li><Link to="/projects">Projects</Link></li>
+                        <li><Link to="/resume">Resume</Link></li>
                     </ul>
                 </div>
             </nav>

@@ -1,0 +1,36 @@
+img {
+    margin-top: 25px;
+    width: 500px;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.grow { 
+  transition: transform .2s; 
+}
+  
+.grow:hover { 
+  transform: scale(1.2);
+}
+
+#about {
+  width: 300px;
+  height: 450px;
+  margin-top: 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  max-width: 350px;
+}
+
+@media only screen and (max-height: 450px) {
+  #about {width: 100%; overflow: scroll; float: left;}
+}
+
+@media only screen and (max-height: 450px) {
+  img {width: 100%; height: 300px; float: left;}
+}
