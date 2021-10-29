@@ -1,5 +1,4 @@
 import React from 'react';
-import '../style.css';
 import '../footer/footer.css'
 
 function Footer() {
@@ -7,12 +6,10 @@ function Footer() {
         <footer>
             <div id="social-icons" className="socialMain">
                 <ul class="social">
-                    <li><a id="social-icons" className="slink social-icons" href="https://www.instagram.com/stevefromspace/"><i className="grow fa fa-instagram" aria-hidden="true"></i> </a></li>
-                    <li><a id="social-icons" className="slink" href="https://www.facebook.com/Steve-Fokas-100492391788474/"><i className="grow fa fa-facebook" aria-hidden="true"></i> </a></li>
-                    <li><a id="social-icons" className="slink" href="https://twitter.com/stevefromspace"> <i className="grow fa fa-twitter" aria-hidden="true"></i></a></li>                 
-                    <li><a id="social-icons" className="slink" href="https://soundcloud.com/stevefromspace"><i className="grow fa fa-soundcloud" aria-hidden="true"></i> </a></li>
-                    <li><a id="social-icons" className="slink" href="https://open.spotify.com/artist/2unluylwecjrT2yT5Q8rfB"><i className="grow fa fa-spotify" aria-hidden="true"></i> </a></li>
-                    <li><a id="social-icons" className="slink" href="https://music.apple.com/us/artist/steve-fokas/658109679"><i className="grow fa fa-apple" aria-hidden="true"></i> </a></li> 
+                    <li><a id="social-icons" className="slink social-icons" href="https://www.linkedin.com/in/steven-fokas-01933849/"><i className="grow fa fa-linkedin" aria-hidden="true"></i> </a></li>               
+                    <li><a id="social-icons" className="slink" href="https://github.com/sf487552"><i className="grow fa fa-github" aria-hidden="true"></i> </a></li>
+                    <li><a id="social-icons" className="slink" href="steven.fokas89@gmail.com"><i className="grow fa fa-envelope" aria-hidden="true"></i> </a></li>
+                    <li><a id="social-icons" className="slink" href="tel:610-653-0662"><i className="grow fa fa-phone" aria-hidden="true"></i> </a></li> 
                 </ul>
                 <script src="script.js"></script>
             </div>

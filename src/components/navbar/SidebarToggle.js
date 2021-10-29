@@ -1,5 +1,4 @@
 import React from 'react';
-import '../style.css';
 import '../navbar/navbar.css'
 
 const sidebarToggle= props => (

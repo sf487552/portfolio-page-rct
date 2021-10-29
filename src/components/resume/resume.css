@@ -1,0 +1,150 @@
+.card-header {    
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 20px;
+  background: black;
+  color: #fff;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.card-column {
+  margin: 2rem auto;
+  flex: wrap;
+  flex-direction: column;
+  width: 85%;
+  left: 0%;   
+}
+
+.code-card {
+  width: 100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.card img {
+  position: relative;
+  width: 200px;
+  margin: 10px;
+}
+
+.card {
+  width: 100%;
+}
+
+.card {
+  position: relative;
+  width: auto;
+  height: auto;
+  transition: 0.5s;
+  background-color: black;
+    
+}
+
+.card:hover {
+  z-index: 1;
+  transform: scale(1.25);
+  /* box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5); */
+}
+
+.card-column {
+  justify-content: center;
+  text-align: center;
+}
+
+.view-resume {
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+    /* on tablets, set columns to only be 50% of the width and not grow */
+  .card {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .content {
+    margin-right: 0px;
+  }
+}
+
+.card-body {
+  flex-direction: column;
+}
+
+#resume {
+  width: 200px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20vh;
+  margin-bottom: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 10px 40px 2px #707070;
+  background: #000;
+  transform-origin: center center 0px;
+  transition: all 0.5s ease-out;
+  animation-name: animate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
+  z-index: 1;
+}
+#resume:hover {
+  animation: unset;
+  margin-top: 18vh;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+}
+
+@-moz-keyframes animate {
+  0% {
+    margin-top: 20vh;
+  }
+  50% {
+    margin-top: 18vh;
+  }
+  100% {
+    margin-top: 20vh;
+  }
+}
+@-webkit-keyframes animate {
+  0% {
+    margin-top: 20vh;
+  }
+  50% {
+    margin-top: 18vh;
+  }
+  100% {
+    margin-top: 20vh;
+  }
+}
+@-o-keyframes animate {
+  0% {
+    margin-top: 20vh;
+  }
+  50% {
+    margin-top: 18vh;
+  }
+  100% {
+    margin-top: 20vh;
+  }
+}
+@keyframes animate {
+  0% {
+    margin-top: 20vh;
+  }
+  50% {
+    margin-top: 18vh;
+  }
+  100% {
+    margin-top: 20vh;
+  }
+}
+
