@@ -26,7 +26,6 @@ a {
 
 .card-body {
   display: flex;
-  flex-direction: row;
 }
 
 .card img {
@@ -51,7 +50,7 @@ a {
 .card:hover {
   z-index: 1;
   transform: scale(1.25);
-  /* box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5); */
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
 }
 
 .card-column {
