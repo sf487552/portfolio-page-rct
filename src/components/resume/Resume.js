@@ -3,7 +3,7 @@ import '../resume/resume.css';
 
 function Resume() {
 	return (
-        <div className="card-column" id="resume">
+        <div className="card-column centered" id="resume">
             <figure className="card code-card">
                 <h2 className="card-header">Resume</h2>
                 <div className="card-body">

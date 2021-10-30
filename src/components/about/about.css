@@ -1,9 +1,9 @@
 img {
-    margin-top: 25px;
-    width: 30rem;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 15px;
+  margin-top: 25px;
+  width: 30rem;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 15px;
 }
 
 .image {
@@ -53,8 +53,13 @@ img {
   place-content: center;
   text-align: center;
   text-shadow: 1px 1px 4px rgb(169 169 169);
-  /* max-height: 500px; */
-  /* overflow: scroll; */
+  max-height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+ms ::-webkit-scrollbar {
+  display: none;
 }
 
 #intro {

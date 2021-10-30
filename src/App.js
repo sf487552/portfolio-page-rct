@@ -43,25 +43,25 @@ class App extends Component {
         <Sidebar show={this.state.sidebarOpen}/>
         {backdrop}
         <main style={{ marginTop:'65px'}}>
-      <div>
-              <Switch>
-                <Route exact path="/">
-                  <About />
-                </Route>
-                <Route path="/about">
-                  <About />
-                </Route>
-                <Route path="/contact">
-                  <Contact />
-                </Route>
-                <Route path="/projects">
-                  <Projects />
-                </Route>
-                <Route path="/resume">
-                  <Resume />
-                </Route>
-              </Switch>
-            </div>
+          <div className="mainSection">
+            <Switch>
+              <Route exact path="/">
+                <About />
+              </Route>
+              <Route path="/about">
+                <About />
+              </Route>
+              <Route path="/contact">
+                <Contact />
+              </Route>
+              <Route path="/projects">
+                <Projects />
+              </Route>
+              <Route path="/resume">
+                <Resume />
+              </Route>
+            </Switch>
+          </div>
     
         </main>
         <Footer></Footer>

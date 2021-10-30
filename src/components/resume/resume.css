@@ -15,9 +15,11 @@ a {
 .card-column {
   margin: 2rem auto;
   flex: wrap;
-  flex-direction: column;
-  width: 85%;
-  left: 0%;   
+  /* flex-direction: column; */
+  /* width: 85%; */
+  left: 23%;   
+  justify-content: center;
+  text-align: center;
 }
 
 .code-card {
@@ -26,6 +28,8 @@ a {
 
 .card-body {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card img {
@@ -35,16 +39,11 @@ a {
 }
 
 .card {
-  width: 100%;
-}
-
-.card {
   position: relative;
   width: auto;
   height: auto;
   transition: 0.5s;
   background-color: black;
-    
 }
 
 .card:hover {
@@ -53,17 +52,11 @@ a {
   box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
 }
 
-.card-column {
-  justify-content: center;
-  text-align: center;
-}
-
-.view-resume {
+.view#resume {
   color: white;
 }
 
 @media screen and (max-width: 768px) {
-    /* on tablets, set columns to only be 50% of the width and not grow */
   .card {
     flex: 0 0 50%;
     max-width: 50%;
@@ -71,10 +64,6 @@ a {
   .content {
     margin-right: 0px;
   }
-}
-
-.card-body {
-  flex-direction: column;
 }
 
 #resume {
@@ -95,7 +84,15 @@ a {
   animation-iteration-count: infinite;
   transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
   z-index: 1;
+  left: 40%;
 }
+
+@media screen and (max-width: 450px) {
+  #resume {
+    left: 23%;
+  }  
+}
+
 #resume:hover {
   animation: unset;
   margin-top: 18vh;
