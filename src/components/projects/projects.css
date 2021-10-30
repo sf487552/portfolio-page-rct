@@ -2,6 +2,7 @@
   display: flex;    
   /* overflow-x: auto; */
   height: 300px;
+  margin: 0;
 }
 
 .container img {   
@@ -17,9 +18,9 @@
 body {   
   display: flex;   
   align-items: center;   
-  height: 70vh;
+  height: 60vh;
   overflow-y: auto;
-  width: 80%;
+  width: 90%;
 }
 
 @media screen and (max-height: 450px) {
@@ -31,4 +32,55 @@ body {
 
 img {
   cursor: pointer;
+}
+
+#link {
+  font-size: 15px;
+  text-align: center;
+  font-weight: lighter;
+  margin-left: 0;
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: lighter;
+  margin-left: 0;
+}
+
+.overlay {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: black;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+.project:hover .overlay {
+  opacity: 1;
+  /* margin-bottom: 20px; */
+  position: absolute;
+}
+
+.text {
+  color: white;
+  font-size: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  margin: 2px;
+}
+
+.description {
+  display: flex;
 }

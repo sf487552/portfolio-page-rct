@@ -42,7 +42,7 @@ class App extends Component {
         <Navbar sidebarClickHandler={this.sidebarToggleClickHandler}/>
         <Sidebar show={this.state.sidebarOpen}/>
         {backdrop}
-        <main style={{ marginTop:'65px'}}>
+        <main style={{ marginTop:'auto'}}>
           <div className="mainSection">
             <Switch>
               <Route exact path="/">
