@@ -19,6 +19,14 @@ body {
   align-items: center;   
   height: 70vh;
   overflow-y: auto;
+  width: 80%;
+}
+
+@media screen and (max-height: 450px) {
+  body {
+    height: 100%;
+  }
+  
 }
 
 img {

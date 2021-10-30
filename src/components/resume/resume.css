@@ -1,4 +1,15 @@
-.card-header {    
+.myResume {
+  
+}
+
+
+
+
+
+
+
+
+/* .card-header {    
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -8,15 +19,15 @@
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
 .card-column {
   margin: 2rem auto;
   flex: wrap;
-  /* flex-direction: column; */
-  /* width: 85%; */
+  flex-direction: column;
+  width: 85%;
   left: 23%;   
   justify-content: center;
   text-align: center;
@@ -84,12 +95,12 @@ a {
   animation-iteration-count: infinite;
   transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
   z-index: 1;
-  left: 40%;
+  margin-left: 40%;
 }
 
 @media screen and (max-width: 450px) {
   #resume {
-    left: 23%;
+    margin-left: 43%;
   }  
 }
 
@@ -143,4 +154,4 @@ a {
     margin-top: 20vh;
   }
 }
-
+ */
