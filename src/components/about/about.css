@@ -1,50 +1,3 @@
-img {
-  margin-top: 25px;
-  width: 30rem;
-  align-items: center;
-  overflow: hidden;
-  border-radius: 15px;
-}
-
-.image {
-  height: auto;
-  cursor: pointer;
-}
-
-.grow { 
-  transition: transform .2s; 
-}
-  
-.grow:hover { 
-  transform: scale(1.2);
-}
-
-@media only screen and (max-height: 450px) {
-  #about {width: 100%; overflow: scroll; float: left;}
-}
-
-@media only screen and (max-height: 450px) {
-  img {width: 100%; height: 300px; float: left;}
-}
-
-
-/* Google Fonts */
-@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
-
-
-/* .container{
-  height: 400px;
-  padding: 0;
-  color: #f1f1f1; 
-  font-family: 'Anonymous Pro', monospace;   
-  background-color: rgb(25,25,25);
-}  */
-
-:root {
-  --typewriterSpeed: 6s;
-  --typewriterCharacters: 24;
-}
-
 #about {
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
@@ -52,10 +5,22 @@ img {
   display: grid;
   place-content: center;
   text-align: center;
-  text-shadow: 1px 1px 4px rgb(169 169 169);
   max-height: 500px;
   overflow-y: hidden;
-  overflow-x: auto;
+  /* overflow-x: auto; */
+}
+
+@media only screen and (max-height: 450px) {
+  #about {width: 100%; overflow: scroll; float: left;}
+}
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+
+:root {
+  --typewriterSpeed: 3s;
+  --typewriterCharacters: 24;
 }
 
 ms ::-webkit-scrollbar {
@@ -94,12 +59,12 @@ ms ::-webkit-scrollbar {
 }
 
 .subtitle {
+  display: flex;
   max-height: 460px;
   color: black;
   font-size: 1.2rem;
-  overflow: hidden;
   opacity: 0;
-  transform: translateY(3rem);
+  transform: translate(-50%, -50%, -50%);
   -webkit-animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
           animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 2s) forwards;
 }

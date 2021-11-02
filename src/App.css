@@ -1,24 +1,27 @@
 html {
-  overflow-y: scroll; 
-  overflow-x: scroll;
   height: 100%;
 }
 
 body {
-  height: 100%;
-  margin:0 auto;
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   line-height: 187.5%;
   letter-spacing: 0.01em;
   background: #f1f1f1;
+  /* overflow: hidden; */
+  bottom: 100;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.Containers {
-  position: absolute;
+main {
+  margin-top: 8%;
+}
+
+@media screen and (max-width: 400px) {
+  main {
+    margin-top: 18%;
+  }
 }
 
 .logo {
@@ -28,13 +31,6 @@ body {
   cursor: pointer;
 }
 
-.centered {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 header {
   position: fixed;
   margin-left: 5px;
@@ -42,47 +38,21 @@ header {
   text-align: left;
   line-height: .35rem;
   letter-spacing: 1%;
-  /* text-shadow: 1px 1px 4px rgb(169 169 169); */
-  /* float: left; */
   margin-left: 15px;
   top: 0;
   left: 0;
 }
 
-.mainImg {
-  margin-left: 25%;
-  margin-right: 25%;
-}
-
-@media screen and (max-height: 450px) {
-  #mainimg {
-    height: 120px;
-    overflow: hidden;
-  }
-}
-
-@media only screen and (max-height: 450px) {
-  #about { 
-    width: 100%; 
-    overflow: scroll; 
-    float: left;
-  }
-}
-
-@media only screen and (max-height: 450px) {
-  img {
-    width: 100%; 
-    height: 300px; 
-    float: left;
-  }
-}
-
-.grow { 
-  transition: transform .2s; 
-}
-  
-.grow:hover { 
-  transform: scale(1.2);
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .shadow {
@@ -110,6 +80,3 @@ header {
   from {opacity: .5}
   to {opacity: 2}
 }
-
-
-

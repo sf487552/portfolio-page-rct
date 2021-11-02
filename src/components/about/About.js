@@ -4,7 +4,7 @@ import '../about/about.css';
 
 function About() {
     return (
-        <div id="about" className="display centered">
+        <div id="about" className="container">
             <h1 id="intro">Hi, I'm Steve.</h1>
                 <p className="subtitle">
                     I'm a Full Stack Web Developer who is focused on creating unique and intuitive experiences for all types of users. I work primarily in HTML, CSS, and Javascript which I use alongside technologies such as Node JS, Express, server side and third party API's, SQL, NO SQL, MongoDB, Mongoose, React, Jquery, Bootstrap, Handlebars, and I'm constantly adding more to my toolbox every week.

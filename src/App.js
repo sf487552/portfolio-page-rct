@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import './App.css';
-import About from "./components/about/About.js";
+import About from './components/about/About';
 import Contact from "./components/contact/Contact.js";
 import Footer from "./components/footer/Footer.js";
 import Navbar from "../src/components/navbar/Navbar.js";
@@ -13,6 +13,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
+import Home from "./components/home/Home";
 
 
 class App extends Component {
@@ -42,11 +43,14 @@ class App extends Component {
         <Navbar sidebarClickHandler={this.sidebarToggleClickHandler}/>
         <Sidebar show={this.state.sidebarOpen}/>
         {backdrop}
-        <main style={{ marginTop:'auto'}}>
+        <main className="topMarg">
           <div className="mainSection">
             <Switch>
               <Route exact path="/">
-                <About />
+                <Home />
+              </Route>
+              <Route path="/home">
+                <Home />
               </Route>
               <Route path="/about">
                 <About />
@@ -61,10 +65,10 @@ class App extends Component {
                 <Resume />
               </Route>
             </Switch>
+            <Footer/>
           </div>
-    
         </main>
-        <Footer></Footer>
+        
         </Router>
       </div>
     );
