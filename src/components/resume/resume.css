@@ -1,157 +1,52 @@
 .myResume {
-  
+  margin-bottom: 150px;
 }
 
-
-
-
-
-
-
-
-/* .card-header {    
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
-  background: black;
-  color: #fff;
+.topSection { 
+  overflow:hidden;
+  margin-bottom: 0;
+  width:80%;
+  max-height: 200px;
+}
+.midSection {
+  overflow:hidden;
+  margin-bottom: 0;
+  width:80%;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-}
-
-.card-column {
-  margin: 2rem auto;
-  flex: wrap;
-  flex-direction: column;
-  width: 85%;
-  left: 23%;   
-  justify-content: center;
+#myID {
+  background-color: transparent;
+  min-height: 170px;
+  float:left; 
+  margin-left:30%;
+  margin-right:35px;
   text-align: center;
 }
 
-.code-card {
-  width: 100%;
+.school {
+  margin: 0;
+  text-align: center;
 }
 
-.card-body {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+#edu { 
+  background-color: transparent;
+  overflow:hidden;
+  min-height:170px;
+
 }
 
-.card img {
-  position: relative;
-  width: 200px;
-  margin: 10px;
+.text-shadow {
+  text-shadow: black .25px 0 2px;
 }
 
-.card {
-  position: relative;
-  width: auto;
-  height: auto;
-  transition: 0.5s;
-  background-color: black;
+.name {
+  margin-top: 8px;
 }
 
-.card:hover {
-  z-index: 1;
-  transform: scale(1.25);
-  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.5);
-}
-
-.view#resume {
-  color: white;
-}
-
-@media screen and (max-width: 768px) {
-  .card {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .content {
-    margin-right: 0px;
+@media screen and (max-width: 400px) {
+   #myID { 
+    float: none;
+    margin-right:0;
+    /* width:auto;     */
   }
 }
-
-#resume {
-  width: 200px;
-  height: 300px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20vh;
-  margin-bottom: 50px;
-  border-radius: 5px;
-  cursor: pointer;
-  box-shadow: 0 10px 40px 2px #707070;
-  background: #000;
-  transform-origin: center center 0px;
-  transition: all 0.5s ease-out;
-  animation-name: animate;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  transform: perspective(1000px) rotateX(35deg) rotateY(4deg) rotateZ(-30deg);
-  z-index: 1;
-  margin-left: 40%;
-}
-
-@media screen and (max-width: 450px) {
-  #resume {
-    margin-left: 43%;
-  }  
-}
-
-#resume:hover {
-  animation: unset;
-  margin-top: 18vh;
-  transform: perspective(1000px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-}
-
-@-moz-keyframes animate {
-  0% {
-    margin-top: 20vh;
-  }
-  50% {
-    margin-top: 18vh;
-  }
-  100% {
-    margin-top: 20vh;
-  }
-}
-@-webkit-keyframes animate {
-  0% {
-    margin-top: 20vh;
-  }
-  50% {
-    margin-top: 18vh;
-  }
-  100% {
-    margin-top: 20vh;
-  }
-}
-@-o-keyframes animate {
-  0% {
-    margin-top: 20vh;
-  }
-  50% {
-    margin-top: 18vh;
-  }
-  100% {
-    margin-top: 20vh;
-  }
-}
-@keyframes animate {
-  0% {
-    margin-top: 20vh;
-  }
-  50% {
-    margin-top: 18vh;
-  }
-  100% {
-    margin-top: 20vh;
-  }
-}
- */
