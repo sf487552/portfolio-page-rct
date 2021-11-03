@@ -11,7 +11,7 @@
 }
 
 @media only screen and (max-width: 450px) {
-  #about {width: 85%; margin:0; overflow: scroll; float: left;}
+  #about {width: 80%; height: 60%; overflow: scroll; float: left;}
   
 }
 
@@ -45,6 +45,7 @@ ms ::-webkit-scrollbar {
   right: 0;
   bottom: -5px;
   left: 0;
+  width: auto;
 }
 
 #intro::before {
