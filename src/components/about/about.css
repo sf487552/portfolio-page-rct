@@ -6,12 +6,13 @@
   place-content: center;
   text-align: center;
   max-height: 450px;
-  overflow-y: hidden;
+  /* overflow-y: hidden; */
   /* overflow-x: auto; */
 }
 
-@media only screen and (max-height: 450px) {
-  #about {width: 100%; overflow: scroll; float: left;}
+@media only screen and (max-width: 450px) {
+  #about {width: 85%; margin:0; overflow: scroll; float: left;}
+  
 }
 
 /* Google Fonts */
