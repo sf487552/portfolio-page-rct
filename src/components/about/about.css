@@ -5,7 +5,7 @@
   display: grid;
   place-content: center;
   text-align: center;
-  max-height: 500px;
+  max-height: 450px;
   overflow-y: hidden;
   /* overflow-x: auto; */
 }
@@ -33,6 +33,7 @@ ms ::-webkit-scrollbar {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+  margin-top: 60px;
 }
 
 #intro::before,
