@@ -45,7 +45,7 @@ function Projects() {
                 <img id="one" className="grow pic shadow" alt="Avatar5" src={image5}></img>
                 <div id="two">
                     <h1><a id="link" href="https://note-taker-sf.herokuapp.com/">Note Taker</a></h1>
-                    <h1><a id="link" href="https://github.com/sf487552/Note-Taker-">Github Repo</a></h1>
+                    <h1><a id="link" href="https://github.com/sf487552/note-taker-sf">Github Repo</a></h1>
                     <p>This project showcases more of my skills with Express JS on the Back End portion which saves and retrieves data from a Json file. I created the backnend and connected it to the front.</p>
                 </div>
             </div>
