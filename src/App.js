@@ -16,7 +16,7 @@ import {
 import Home from "./components/home/Home";
 import TagManager from 'react-gtm-module'
 const tagManagerArgs = {
-  gtmId: '<GTM-5J74PFD>'
+  gtmId: 'GTM-5J74PFD'
 }
 TagManager.initialize(tagManagerArgs)
 
