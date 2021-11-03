@@ -1,45 +1,23 @@
 import React from 'react';
 import '../resume/resume.css';
+import name from '../images/name.jpg';
+import edu from '../images/edu.jpg';
+import skillss from '../images/skillss.jpg';
+import summary from '../images/summary.jpg';
 
 function Resume() {
-	return (
+    return (
         <div className="myResume " id="resume">
-            <div class="topSection wrapper">
-                <div id="myID">
-                    <h1 className="name text-shadow">Steven Demosthenis Fokas</h1>
-                    <h2>Email: steven.fokas89@gmail.com<br/>
-                    Phone: 1(610)-653-0662</h2>
-                    <h3>
-                        1100 S Broad Street 516C
-                        <br/>Philadelphia PA 19146
-                    </h3>
-                </div>
-                <div id="edu">
-                    <div className="school">
-                        <h2 className="name text-shadow">University of Pennsylvania 2021</h2>
-                        <p>Certification in Full Stack Web Development</p>
-                            <br/>
-                        <h2 className="name text-shadow">Saint Joseph's University 2012</h2>
-                        <p>Bachelors in Marketing from the Haub School of Business</p>
-                    </div>
-                </div>
+            <h1 className="resumelink grow"><a id="link" href="https://drive.google.com/file/d/1wP0HTQ9Yubkj3x3Fgdc53hmEcj4o1ssz/view?usp=sharing">SEE FULL RESUME HERE</a></h1>
+            <div id="p1" className="wrapper2">
+                <img id="three" className="grow pic shadow" alt="Avatar1" src={name}></img>
+                <img id="four"className="grow pic shadow" alt="Avatar1" src={edu}></img>
             </div>
-            <div className="midSection wrapper">    
-                <div className="skills">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
-                <div className="skills">
-                    <ul>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-                </div>
+            <div id="p1" className="wrapper">
+                <img id="five" className="grow pic shadow" alt="Avatar1" src={summary}></img>
+                <img id="six"className="grow shadow" alt="Avatar1" src={skillss}></img>
             </div>
+
         </div>
     );
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import SidebarToggle from '../navbar/SidebarToggle';
 import '../navbar/navbar.css';
+import logo1 from '../images/logo.png';
 import {
     Link
   } from "react-router-dom";
@@ -12,7 +13,7 @@ function navbar(props) {
                 <div className="nav_toggle-button">
                     <SidebarToggle click={props.sidebarClickHandler} />
                 </div>
-                <div className="nav_logo grow"><a href="/">Steve's Portfolio</a></div>
+                <img alt="logo1" src={logo1} className="nav_logo grow text-shadow"></img>
                 <div className="space"></div>
                 <div className="nav_items">
                     <ul>

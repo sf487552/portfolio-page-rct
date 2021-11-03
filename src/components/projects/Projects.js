@@ -14,7 +14,7 @@ function Projects() {
                 <div id="two">
                     <h1><a id="link" href="https://sf487552.github.io/Music-Site/#about">Artist Fan Page</a></h1>
                     <h1><a id="link" href="https://github.com/sf487552/Music-Site">Github Repo</a></h1>
-                    <p>This project was made using raw HTML, CSS, Javascript, and JQuery. It's a clean, easy-to-use, mobile friendly artist fan page made by yours truly.</p>
+                    <p>This project was made using raw HTML, CSS, Javascript, and JQuery as well as Adobe Illustrator. It's a clean, easy-to-use, mobile friendly artist fan page made by yours truly.</p>
                 </div>
             </div>
             <div id="p2" className="wrapper">

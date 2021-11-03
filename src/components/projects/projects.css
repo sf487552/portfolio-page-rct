@@ -16,6 +16,7 @@ p {
   border-radius: 15px;
   width: auto;
   max-height: 200px;
+  margin: 0;
 }
 
 .wrapper { 
@@ -46,7 +47,16 @@ p {
    #one { 
     float: none;
     margin-right:0;
-    /* width:auto; */
+    margin-left: 0;
+    width:auto;
+  }
+  .pic { 
+      float: none;
+      margin-right:0;
+      width:auto;
+    }
+    .wrapper {
+      width: 100%;
+    }
   }
 
-}

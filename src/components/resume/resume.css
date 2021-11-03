@@ -1,52 +1,80 @@
-.myResume {
-  margin-bottom: 150px;
+#resume {
+  flex-direction: column;
+  margin: 20px;
+  overflow-x: hidden;
 }
 
-.topSection { 
-  overflow:hidden;
-  margin-bottom: 0;
-  width:80%;
-  max-height: 200px;
-}
-.midSection {
-  overflow:hidden;
-  margin-bottom: 0;
-  width:80%;
+.wrapper2 {
+  overflow: visible;
 }
 
-#myID {
-  background-color: transparent;
-  min-height: 170px;
-  float:left; 
-  margin-left:30%;
-  margin-right:35px;
-  text-align: center;
-}
-
-.school {
+.pic {
+  cursor: pointer;
+  border-radius: 15px;
+  width: auto;
+  max-height: auto;
   margin: 0;
+}
+
+.resumelink {
   text-align: center;
+  width: auto;
 }
 
-#edu { 
+#three {
+  margin-left:30%;
+  background-color: gray;
+  float:left; 
+  margin-right:35px;
+  /* margin-top: 20px; */
+}
+
+#four { 
   background-color: transparent;
-  overflow:hidden;
-  min-height:170px;
+  margin-bottom:0;
 
 }
 
-.text-shadow {
-  text-shadow: black .25px 0 2px;
+#five {
+  margin-left:30%;
+  background-color: gray;
+  float:left; 
+  margin-right:35px;
+  width: 400px;
+
 }
 
-.name {
-  margin-top: 8px;
+#six { 
+  background-color: transparent;
+  margin:10px;
+  height: 250px;
+
+
 }
 
 @media screen and (max-width: 400px) {
-   #myID { 
+   #three, #four, #five, #six { 
     float: none;
     margin-right:0;
-    /* width:auto;     */
+    margin-left: 0;
+    width: 300px;
+    height: auto;
+    align-items: center;
   }
-}
+
+.link {
+    margin-top: 60px;
+  }
+  #six {
+    margin-bottom: 100px;
+  }
+  .wrapper2 {
+    overflow: scroll;
+  }
+  .pic { 
+      float: none;
+      margin-right:0;
+      width:100%
+      ;
+    }
+  }
