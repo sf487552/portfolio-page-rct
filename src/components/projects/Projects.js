@@ -14,7 +14,7 @@ function Projects() {
                 <div id="two">
                     <h1><a id="link" href="https://sf487552.github.io/Music-Site/#about">Artist Fan Page</a></h1>
                     <h1><a id="link" href="https://github.com/sf487552/Music-Site">Github Repo</a></h1>
-                    <p>This project was made using raw HTML, CSS, Javascript, and JQuery as well as Adobe Illustrator. It's a clean, easy-to-use, mobile friendly artist fan page made by yours truly. Google Tag Manager has also been added this page to track the user interactions in it.</p>
+                    <p>This project was made using raw HTML, CSS, Javascript, and JQuery as well as Adobe Illustrator. It's a clean, easy-to-use, mobile friendly artist fan page made by yours truly. Google Tag Manager has also been added to this page to track the user interactions in it.</p>
                 </div>
             </div>
             <div id="p2" className="wrapper">
@@ -22,7 +22,7 @@ function Projects() {
                 <div id="two">
                     <h1><a id="link" href="https://fast-anchorage-27962.herokuapp.com/?id=617d346ba14bb1001679385c">Fitness App</a></h1>
                     <h1><a id="link" href="https://github.com/sf487552/Workout-Tracker">Github Repo</a></h1>
-                    <p>This project showcases my skills using MongoDB with a Mongoose Schema and Express Routes. The site has been deployed using Heroku and MongoDB Atlas. Google Tag Manager has also been added this page to track the user interactions in it.</p>
+                    <p>This project showcases my skills using MongoDB with a Mongoose Schema and Express Routes. The site has been deployed using Heroku and MongoDB Atlas. Google Tag Manager has also been added to this page to track the user interactions in it.</p>
                 </div>
             </div>
             <div id="p3" className="wrapper">
@@ -38,7 +38,7 @@ function Projects() {
                 <div id="two">
                     <h1><a id="link" href="https://sf487552.github.io/Weather-Dashboard/">Weather Dash</a></h1>
                     <h1><a id="link" href="https://github.com/sf487552/Weather-Dashboard">Github Repo</a></h1>
-                    <p>This project was made using Third Party APIs along with HTML, CSS, and Javascript while using localStorage to store persistant data. Google Tag Manager has also been added this page to track the user interactions in it.</p>
+                    <p>This project was made using Third Party APIs along with HTML, CSS, and Javascript while using localStorage to store persistant data. Google Tag Manager has also been added to this page to track the user interactions in it.</p>
                 </div>
             </div>
             <div id="p5" className="wrapper">
@@ -46,7 +46,7 @@ function Projects() {
                 <div id="two">
                     <h1><a id="link" href="https://note-taker-sf.herokuapp.com/">Note Taker</a></h1>
                     <h1><a id="link" href="https://github.com/sf487552/note-taker-sf">Github Repo</a></h1>
-                    <p>This project showcases more of my skills with Express JS on the Back End portion which saves and retrieves data from a Json file. I created the backnend and connected it to the front. Google Tag Manager has also been added this page to track the user interactions in it.</p>
+                    <p>This project showcases more of my skills with Express JS on the Back End portion which saves and retrieves data from a Json file. I created the backnend and connected it to the front. Google Tag Manager has also been added to this page to track the user interactions in it.</p>
                 </div>
             </div>
         </div>

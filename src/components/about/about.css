@@ -6,12 +6,12 @@
   place-content: center;
   text-align: center;
   max-height: 450px;
-  /* overflow-y: hidden; */
+  overflow-y: auto;
   /* overflow-x: auto; */
 }
 
 @media only screen and (max-width: 450px) {
-  #about {width: 80%; height: 60%; overflow: scroll; float: left;}
+  #about {width: 80%; height: 60%; }
   
 }
 
@@ -35,6 +35,8 @@ ms ::-webkit-scrollbar {
   width: -moz-max-content;
   width: max-content;
   margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 20px;
 }
 
 #intro::before,
@@ -47,6 +49,15 @@ ms ::-webkit-scrollbar {
   left: 0;
   width: auto;
 }
+
+@media screen and (max-width: 455px){
+#intro::after {
+  margin-top: 60px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+}
+
 
 #intro::before {
   background: #f1f1f1;
