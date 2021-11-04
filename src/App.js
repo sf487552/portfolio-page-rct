@@ -62,7 +62,7 @@ class App extends Component {
       backdrop = <Backdrop click={this.backdropClickHandler} />
     }
     return (
-      <div style={{ height: '100%' }}>
+      <div>
         <Router>
         <Navbar sidebarClickHandler={this.sidebarToggleClickHandler}/>
         <Sidebar show={this.state.sidebarOpen}/>
