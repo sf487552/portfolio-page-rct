@@ -18,7 +18,7 @@ function Contact() {
                         <i className="fa fa-github" aria-hidden="true"></i>
                     </a>
                 
-                    <a className="grow shadow social-icon" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/steven-fokas-01933849/">
+                    <a className="grow shadow social-icon" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/steven-fokas-01933849">
                         <i className="fa fa-linkedin" aria-hidden="true"></i>
                     </a>
 
