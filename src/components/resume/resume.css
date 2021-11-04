@@ -52,7 +52,7 @@
 
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 450px) {
    #three, #four, #five, #six { 
     float: none;
     margin-right:0;
