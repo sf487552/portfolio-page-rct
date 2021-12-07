@@ -14,11 +14,8 @@ import {
   Route,
 } from "react-router-dom";
 import Home from "./components/home/Home";
-import TagManager from 'react-gtm-module'
-const tagManagerArgs = {
-  gtmId: 'GTM-K4P55NJ'
-}
-TagManager.initialize(tagManagerArgs)
+import useGaTracker from './useGaTracker'
+
 
 
 class App extends Component {
@@ -61,6 +58,7 @@ class App extends Component {
     if (this.state.sidebarOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />
     }
+    useGaTracker();
     return (
       <div>
         <Router>
