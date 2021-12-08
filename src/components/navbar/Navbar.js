@@ -7,7 +7,7 @@ import {
   } from "react-router-dom";
 
   const sendNavEvent = (action) => {
-    window._analytics.trackEvent({ category: window.location.pathname, action})
+    window._analytics?.trackEvent({ category: window.location.pathname, action})
 }
 
 function navbar(props) {
@@ -22,7 +22,7 @@ function navbar(props) {
                 <div className="nav_items">
                     <ul>
                         <li className="grow">
-                            <Link to="/" onClick={() => sendNavEvent("Nav > Home - click")}>Home</Link>
+                            <Link to="/" onClick={() => {this.sendNavEvent()}}>Home</Link>
                         </li>
 
                         <li className="grow">
