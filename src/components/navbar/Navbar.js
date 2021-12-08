@@ -17,7 +17,7 @@ function navbar(props) {
                 <div className="space"></div>
                 <div className="nav_items">
                     <ul>
-                        <li className="grow"><Link to="/Home">Home</Link></li>
+                        <li className="grow"><Link to="/">Home</Link></li>
                         <li className="grow"><Link to="/about">About</Link></li>
                         <li className="grow"><Link to="/contact">Contact</Link></li>
                         <li className="grow"><Link to="/projects">Projects</Link></li>

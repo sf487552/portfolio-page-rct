@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../footer/footer.css';
-import '../contact/contact.css'
+import '../contact/contact.css';
+import { useLocation } from "react-router-dom";
 
 function Contact() {
+    const location = useLocation()
+    useEffect(() => {
+        window._analytics?.trackPageView(location.pathname);
+    },[location])
     return (
         <div className="contactMe">
             <div id="social-icons" className="social">

@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 // import mainimg from '../images/stevespic.jpg';
 import '../about/about.css';
+import { useLocation } from "react-router-dom";
 
 function About() {
+    const location = useLocation()
+    useEffect(() => {
+        window._analytics?.trackPageView(location.pathname);
+    },[location])
     return (
         <div id="about" className="container">
             <h1 id="intro">Hi, I'm Steve.</h1>

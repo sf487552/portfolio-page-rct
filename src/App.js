@@ -14,42 +14,42 @@ import {
   Route,
 } from "react-router-dom";
 import Home from "./components/home/Home";
-import useGaTracker from './useGaTracker'
-
 
 
 class App extends Component {
   state = {
-      data: null
-    };
+    data: null
+  };
+
+  // componentDidMount() {
+  //   this.callBackendAPI()
+  //     .then(res => this.setState({ data: res.express }))
+  //     .catch(err => console.log(err));
+  //   _analytics.trackPageView();
+  // }
+  // fetching the GET route from the Express server which matches the GET route from server.js
   
-    componentDidMount() {
-      this.callBackendAPI()
-        .then(res => this.setState({ data: res.express }))
-        .catch(err => console.log(err));
+  callBackendAPI = async () => {
+    const response = await fetch('/express_backend');
+    const body = await response.json();
+
+    if (response.status !== 200) {
+      throw Error(body.message)
     }
-      // fetching the GET route from the Express server which matches the GET route from server.js
-    callBackendAPI = async () => {
-      const response = await fetch('/express_backend');
-      const body = await response.json();
-  
-      if (response.status !== 200) {
-        throw Error(body.message) 
-      }
-      return body;
-    };
+    return body;
+  };
   state = {
     sidebarOpen: false
   };
-  
+
   sidebarToggleClickHandler = () => {
     this.setState((prevState) => {
-      return {sidebarOpen: !prevState.sidebarOpen};
+      return { sidebarOpen: !prevState.sidebarOpen };
     });
   };
 
   backdropClickHandler = () => {
-    this.setState({sidebarOpen: false});
+    this.setState({ sidebarOpen: false });
   }
 
   render() {
@@ -58,39 +58,35 @@ class App extends Component {
     if (this.state.sidebarOpen) {
       backdrop = <Backdrop click={this.backdropClickHandler} />
     }
-    useGaTracker();
     return (
       <div>
         <Router>
-        <Navbar sidebarClickHandler={this.sidebarToggleClickHandler}/>
-        <Sidebar show={this.state.sidebarOpen}/>
-        {backdrop}
-        <main className="topMarg">
-          <div className="mainSection">
-            <Switch>
-              <Route exact path="/">
-                <Home />
-              </Route>
-              <Route path="/home">
-                <Home />
-              </Route>
-              <Route path="/about">
-                <About />
-              </Route>
-              <Route path="/contact">
-                <Contact />
-              </Route>
-              <Route path="/projects">
-                <Projects />
-              </Route>
-              <Route path="/resume">
-                <Resume />
-              </Route>
-            </Switch>
-            <Footer/>
-          </div>
-        </main>
-        
+          <Navbar sidebarClickHandler={this.sidebarToggleClickHandler} />
+          <Sidebar show={this.state.sidebarOpen} />
+          {backdrop}
+          <main className="topMarg">
+            <div className="mainSection">
+              <Switch>
+                <Route exact path="/">
+                  <Home />
+                </Route>
+                <Route path="/about">
+                  <About />
+                </Route>
+                <Route path="/contact">
+                  <Contact />
+                </Route>
+                <Route path="/projects">
+                  <Projects />
+                </Route>
+                <Route path="/resume">
+                  <Resume />
+                </Route>
+              </Switch>
+              <Footer />
+            </div>
+          </main>
+
         </Router>
       </div>
     );

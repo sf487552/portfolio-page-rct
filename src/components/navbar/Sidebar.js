@@ -10,7 +10,7 @@ const sidebar = props => {
     <nav className={sidebarClasses}>
         <ul>
           <li>
-                <a className="grow" href="/Home">Home</a>
+                <a className="grow" href="/">Home</a>
             </li>
             <li>
                 <a className="grow" href="/about">About</a>

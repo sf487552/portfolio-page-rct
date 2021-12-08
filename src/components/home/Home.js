@@ -1,12 +1,17 @@
 import './home.css';
-import React from 'react';
+import React, { useEffect } from 'react';
 import mainimg from '../images/me.jpg';
 import {
-    Link
+    Link, useLocation
 } from "react-router-dom";
 
 
+
 function Home() {
+    const location = useLocation()
+    useEffect(() => {
+        window._analytics?.trackPageView(location.pathname);
+    },[location])
     return (
         <div className="container">
             <div className="home">

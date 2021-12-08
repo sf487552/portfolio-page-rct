@@ -1,12 +1,17 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import '../projects/projects.css';
 import image1 from '../images/musicsite2.jpg';
 import image2 from '../images/fitnessapp.jpg';
 import image3 from '../images/cocktailquiz.jpg';
 import image4 from '../images/weatherdash.jpg';
 import image5 from '../images/notetaker.jpg';
+import { useLocation } from "react-router-dom";
 
 function Projects() {
+    const location = useLocation()
+    useEffect(() => {
+        window._analytics?.trackPageView(location.pathname);
+    },[location])
     return (
         <div className="projects">
             <div id="p1" className="wrapper">
