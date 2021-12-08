@@ -6,6 +6,10 @@ import {
     Link
   } from "react-router-dom";
 
+  const sendNavEvent = (action) => {
+    window._analytics.trackEvent({ category: window.location.pathname, action})
+}
+
 function navbar(props) {
     return (
         <header className="navbar">
@@ -17,11 +21,25 @@ function navbar(props) {
                 <div className="space"></div>
                 <div className="nav_items">
                     <ul>
-                        <li className="grow"><Link to="/">Home</Link></li>
-                        <li className="grow"><Link to="/about">About</Link></li>
-                        <li className="grow"><Link to="/contact">Contact</Link></li>
-                        <li className="grow"><Link to="/projects">Projects</Link></li>
-                        <li className="grow"><Link to="/resume">Resume</Link></li>
+                        <li className="grow">
+                            <Link to="/" onClick={() => sendNavEvent("Nav > Home - click")}>Home</Link>
+                        </li>
+
+                        <li className="grow">
+                            <Link to="/about" onClick={() => sendNavEvent("Nav > About - click")}>About</Link>
+                        </li>
+                        
+                        <li className="grow">
+                            <Link to="/contact" onClick={() => sendNavEvent("Nav > Contacts - click")}>Contact</Link>
+                        </li>
+
+                        <li className="grow">
+                            <Link to="/projects" onClick={() => sendNavEvent("Nav > About - click")}>Projects</Link>
+                        </li>
+                        
+                        <li className="grow">
+                            <Link to="/resume" onClick={(E) => console.log(E)}>Resume</Link>
+                        </li>
                     </ul>
                 </div>
             </nav>
