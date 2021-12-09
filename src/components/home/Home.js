@@ -14,8 +14,8 @@ function Home() {
     },[location])
     return (
         <div className="container">
-            <div className="home">
-                <img className="image grow shadow" src={mainimg} alt="mainImg"></img>
+            <div className="home grow">
+                <img className="image shadow" src={mainimg} alt="mainImg"></img>
                 <div className="overlay shadow">
                     <Link to="/about"><h1 className="text">Let me tell you a little bit about myself..</h1></Link>
                 </div>

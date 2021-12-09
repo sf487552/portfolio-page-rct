@@ -1,7 +1,7 @@
 #resume {
   flex-direction: column;
   margin: 20px;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 .wrapper2 {

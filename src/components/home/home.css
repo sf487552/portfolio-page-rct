@@ -6,7 +6,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  overflow: hidden;
+
 }
  
 .image {
@@ -40,7 +40,6 @@
 
 .container:hover .overlay {
   opacity: 1;
-  position: absolute;
 }
 
 

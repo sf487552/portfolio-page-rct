@@ -1,5 +1,6 @@
 .projects {
   margin-bottom: 150px;
+  overflow: hidden;
 }
 
 a {
@@ -20,7 +21,7 @@ p {
 }
 
 .wrapper { 
-  overflow:hidden;
+  /* overflow:hidden; */
   width: 80%;
 }
 
@@ -60,3 +61,7 @@ p {
     }
   }
 
+h1 a:hover,
+h1 a:active {
+  font-style: oblique;
+}
