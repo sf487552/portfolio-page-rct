@@ -1,11 +1,19 @@
 #resume {
   flex-direction: column;
   margin: 20px;
-  /* overflow-x: hidden; */
+  align-items: center;
 }
 
+.wrapper {
+  align-items: center;
+  overflow:visible;
+}
+  
+
+
 .wrapper2 {
-  overflow: visible;
+  align-items: center;
+  overflow:visible;
 }
 
 .pic {
