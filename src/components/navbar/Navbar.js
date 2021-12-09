@@ -18,9 +18,8 @@ const sendNavEvent = (event) => {
     const category = ANALYTICS_MAP[window.location.pathname]
     const action = event.type
     const label = `Nav > ${event.target.innerText} - ${action}`
-
-    window._analytics?.trackEvent({ category, action, label })
-    // window._analytics?.trackEvent({ category: window.location.pathname, action})
+    window._analytics?.trackEvent(category, action, label)
+    // window._analytics?.trackEvent(window.location.pathname, action);
 }
 
 function navbar(props) {
