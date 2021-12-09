@@ -6,8 +6,21 @@ import {
     Link
   } from "react-router-dom";
 
-  const sendNavEvent = (action) => {
-    window._analytics?.trackEvent({ category: window.location.pathname, action})
+const ANALYTICS_MAP = {
+    "/": "HOME",
+    "/about": "ABOUT",
+    "/contact": "CONTACT",
+    "/projects": "PROJECTS",
+    "/resume": "RESUME"
+}
+
+const sendNavEvent = (event) => {
+    const category = ANALYTICS_MAP[window.location.pathname]
+    const action = event.type
+    const label = `Nav > ${event.target.innerText} - ${action}`
+
+    window._analytics?.trackEvent({ category, action, label })
+    // window._analytics?.trackEvent({ category: window.location.pathname, action})
 }
 
 function navbar(props) {
@@ -22,23 +35,23 @@ function navbar(props) {
                 <div className="nav_items">
                     <ul>
                         <li className="grow">
-                            <Link to="/" onClick={() => {this.sendNavEvent()}}>Home</Link>
+                            <Link to="/" onClick={sendNavEvent}>Home</Link>
                         </li>
 
                         <li className="grow">
-                            <Link to="/about" onClick={() => sendNavEvent("Nav > About - click")}>About</Link>
+                            <Link to="/about" onClick={sendNavEvent}>About</Link>
                         </li>
                         
                         <li className="grow">
-                            <Link to="/contact" onClick={() => sendNavEvent("Nav > Contacts - click")}>Contact</Link>
+                            <Link to="/contact" onClick={sendNavEvent}>Contact</Link>
                         </li>
 
                         <li className="grow">
-                            <Link to="/projects" onClick={() => sendNavEvent("Nav > About - click")}>Projects</Link>
+                            <Link to="/projects" onClick={sendNavEvent}>Projects</Link>
                         </li>
                         
                         <li className="grow">
-                            <Link to="/resume" onClick={(E) => console.log(E)}>Resume</Link>
+                            <Link to="/resume" onClick={sendNavEvent}>Resume</Link>
                         </li>
                     </ul>
                 </div>
