@@ -29,7 +29,7 @@ function navbar(props) {
                 <div className="nav_toggle-button">
                     <SidebarToggle click={props.sidebarClickHandler} />
                 </div>
-                <img alt="logo1" src={logo1} className="nav_logo grow text-shadow"></img>
+                <Link to="/" onClick={sendNavEvent}><img alt="logo1" src={logo1} className="nav_logo grow text-shadow"></img></Link>
                 <div className="space"></div>
                 <div className="nav_items">
                     <ul>
