@@ -1,19 +1,20 @@
 #resume {
   flex-direction: column;
+  justify-content: center;
   margin: 20px;
   align-items: center;
 }
 
 .wrapper {
+  justify-content: center;
   align-items: center;
   overflow:visible;
 }
-  
-
 
 .wrapper2 {
+  justify-content: center;
   align-items: center;
-  overflow:visible;
+  overflow: visible;
 }
 
 .pic {
@@ -30,7 +31,7 @@
 }
 
 #three {
-  margin-left:30%;
+  margin-left:37%;
   background-color: gray;
   float:left; 
   margin-right:35px;
@@ -44,7 +45,7 @@
 }
 
 #five {
-  margin-left:30%;
+  margin-left:39%;
   background-color: gray;
   float:left; 
   margin-right:35px;
